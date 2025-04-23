@@ -86,7 +86,7 @@ Procedimientos (Entregables)
 >>*   Revisión de Actas: Las actas pueden ser revisadas y modificadas con el consentimiento de todos los miembros del grupo, según sea necesario para reflejar cambios en el proyecto o en la dinámica del equipo.
 >*  #### Resolución de Conflictos
 >>*   En caso de desacuerdos o conflictos, el grupo deberá referirse al Acta de Colaboración para resolver la situación mediante los mecanismos previamente acordados. Si no se llega a una resolución, se consultará con el del curso para mediación.
->* **##2.Vinculos academicos y  descripción.**
+>* #### 2.Vinculos academicos y  descripción.
 >>* Soy Marlon Atehortua, curso el programa de Ingeniería Industrial, la habilidad principal mia es la capacidad de liderazgo y la fortaleza es que me adapto a las circunstancias para poder lograr los objtevios propuestos.
 >>* Soy Daniel Salinas, curso el programa de Ingeniería Industrial, soy una persona honesta, líder con capacidad de trabajar muy fácil en grupo me desenvuelvo muy fácil hacia los retos nuevos que me pongan y sé trabajar bajo presión si ningún problema.
 >>* Soy Annie Sequeda, curso el programa de Ingneniería Industrial, Soy una persona disciplinada, comprometida y enfocada en lograr resultados. Me gusta mantenerme concentrado en los objetivos, ser responsable con lo que hago y adaptarme fácilmente a diferentes situaciones. También se me da bien organizar mi tiempo, pensar de forma analítica y comunicarme con claridad.
