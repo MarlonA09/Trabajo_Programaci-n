@@ -300,7 +300,7 @@ def menu_administrador():
 
 
 def menu_principal():
-    crear_log(input("Ingrese su usuario: "))
+    
 
     while True:
         print('*'*43)
