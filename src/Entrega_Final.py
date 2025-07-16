@@ -3,49 +3,6 @@ import pytz
 import time
 import platform
 
-acciones_realizadas = {
-    'Registrar Usuario': 0,
-    'Ingresar Vehículo': 0,
-    'Retirar Vehículo': 0,
-    'Acceso Administrador': 0
-}
-
-def crear_log(nombre_usuario):
-    sistema = platform.system()
-    version = platform.version()
-    arquitectura = platform.architecture()[0]
-    plataforma_info = platform.platform()
-
-    encabezado = (
-        f"Usuario: {nombre_usuario}\n"
-        f"Sistema Operativo: {sistema} - {version} - {arquitectura}\n"
-        f"Plataforma: {plataforma_info}\n"
-        f"{'Fecha y hora':<30}|{'Acción':<30}|{'Duración (s)':<15}\n"
-        + "-"*85 + "\n"
-    )
-    with open("log_parqueadero.txt", "w") as archivo:
-        archivo.write(encabezado)
-    print(encabezado)
-
-
-def registrar_log(accion, tiempo_inicio):
-    tiempo_fin = time.time()
-    duracion = round(tiempo_fin - tiempo_inicio, 5)
-    fecha_hora = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
-    linea = f"{fecha_hora:<30}|{accion:<30}|{duracion:<15}\n"
-
-    with open("log_parqueadero.txt", "a") as archivo:
-        archivo.write(linea)
-
-    if accion in acciones_realizadas:
-        acciones_realizadas[accion] += 1
-
-def resumen_log():
-    with open("log_parqueadero.txt", "a") as archivo:
-        archivo.write("\nResumen de Acciones:\n")
-        for accion, cantidad in acciones_realizadas.items():
-            archivo.write(f"{accion}: {cantidad} veces\n")
-
 
 usuarios = {}
 vehiculos = {}
@@ -151,7 +108,7 @@ def registrar_usuario():
         'Placa': placa
     }
     print('Usuario registrado exitosamente')
-    registrar_log("Registrar Usuario", tiempo_inicio)
+    
 
 
 def ingresar_vehiculo():
@@ -274,7 +231,6 @@ def retirar_vehiculo():
         del vehiculos[placa]
         del usuarios[documento]["hora_ingreso"]
 
-        registrar_log("Retirar Vehículo", tiempo_inicio)
     else:
         print("Usuario no registrado o vehículo no ingresado.")
 
@@ -366,7 +322,7 @@ def menu_principal():
         elif opcion == "4":
             menu_administrador()
         elif opcion == "5":
-            resumen_log()
+            
             print("Gracias por usar el sistema ")
             break
         else:
