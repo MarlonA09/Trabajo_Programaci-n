@@ -23,7 +23,6 @@ def crear_log(nombre_usuario):
         f"{'Fecha y hora':<30}|{'Acción':<30}|{'Duración (s)':<15}\n"
         + "-"*85 + "\n"
     )
-
     with open("log_parqueadero.txt", "w") as archivo:
         archivo.write(encabezado)
     print(encabezado)
