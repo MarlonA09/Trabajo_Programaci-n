@@ -1,1 +1,79 @@
+Manual de usuario para el parqueadero La cueva del auto 
+  1. Menú principal del sistema
+  Al ejecutar el sistema, se mostrará el siguiente menú de opciones:
+  1.	Registrar usuario
+  2.	Ingresar vehículo
+  3.	Retirar vehículo
+  4.	Administrador
+  5.	Salir
 
+2. Funcionalidades del sistema
+
+1.	Registrar usuario:
+  Permite ingresar los datos personales de un usuario: nombre, apellido, número de documento y placa del vehículo.
+  El sistema valida que los datos ingresados sean válidos antes de registrarlos.
+2.	Ingresar vehículo:
+  El sistema valida que el usuario esté registrado. Si el parqueadero tiene espacio disponible y la placa no ha ingresado antes,
+  se guarda la hora de ingreso y se imprime una factura de registro con los datos del usuario y la hora que ingreso.
+
+  Ejemplo de factura de ingreso:
+
+  PARQUEADERO LA CUEVA DEL AUTO
+  NIT: 901234987-8
+  Dirección: CL.67 #53-108
+  Celular: 3148325322
+  Horario: 6:00 A.M - 12:00 P.M
+  Factura Electrónica de Registro
+  
+  Nombre: Juan
+  Apellido: Pérez
+  Documento: 123456789
+  Placa: ABC123
+  Hora de ingreso: 10:45:22
+  
+  Gracias por utilizar LA CUEVA DEL AUTO.
+
+3. Retirar vehículo:
+  Se ingresa el documento del usuario y se calcula el tiempo total de parqueo. El cobro se realiza con base en la siguiente tarifa:
+  •	$7.000 por hora completa
+  •	$1.500 por cada cuarto de hora adicional
+  •	Tarifa mínima: $7.000
+  Se imprime una factura de salida con el resumen del tiempo y el valor a pagar.
+  Ejemplo de factura de salida:
+  PARQUEADERO LA CUEVA DEL AUTO
+  NIT: 901234987-8
+  Dirección: CL.67 #53-108
+  Celular: 3148325322
+  Horario: 6:00 A.M - 12:00 P.M
+  Factura Electrónica de Salida
+  
+  Nombre: Juan
+  Apellido: Pérez
+  Documento: 123456789
+  Placa: ABC123
+  Hora de ingreso: 10:45:22
+  Hora de salida: 12:05:10
+  Tiempo total: 80 minutos
+  Total a pagar: $8.500
+  
+  Gracias por utilizar LA CUEVA DEL AUTO
+
+
+
+3. Administrador:
+  Requiere autenticación con usuario y contraseña. Usuarios válidos:
+  •	adminmarlon / batman3
+  •	adminannie / superman1
+  •	admindaniel / ironman2
+  Opciones del menú de administrador:
+  1.	Ver cantidad de vehículos registrados
+  2.	Ver cantidad de vehículos retirados
+  3.	Ver vehículos que aún no se han retirado
+  4.	Ver total recaudado
+  5.	Calcular el tiempo promedio de parqueo
+  6.	Ver listado de usuarios registrados
+  7.	Ver el vehículo con mayor y menor tiempo en el parqueadero
+  8.	Volver al menú principal
+
+4. Salir del sistema:
+Finaliza el programa
